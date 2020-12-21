@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "copy-markdown",
+  "version": "1.0",
+
+  "description": "Copies markdown contents without markdown formatting",
+
+  "permissions": ["activeTab", "clipboardWrite", "contextMenus"],
+  "browser_action": {
+    "default_icon": "icons/cm-32.png",
+    "default_title": "Copy Markdown"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": ["background-build.js"]
+  },
+  "icons": {
+    "48": "./icons/cm-48.png"
+  }
+}
